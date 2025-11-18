@@ -68,4 +68,7 @@ pip install -r requirements.txt
 ├── data.yaml                 # YOLO dataset configuration
 ├── requirements.txt          # List of project dependencies
 └── README.md                 # This file
-📜 LicenseFor academic use under the Advanced Foundations for Machine Learning course.
+```
+
+📜 License
+For academic use under the Advanced Foundations for Machine Learning course.
