@@ -33,10 +33,10 @@ The system integrates state-of-the-art models for high accuracy and reliability:
 
 | **Student** | **Role** |
 | :--- | :--- |
-| **Student A** | Dataset setup, YOLOv8 training |
-| **Student B** | EfficientNet classifier training and evaluation tools |
-| **Student C** | Full pipeline integration (**YOLO + Classifier + OCR + Billing**) |
-| **Student D** | Documentation & Testing |
+| PES1UG23AM210 | Dataset setup, YOLOv8 training |
+| PES1UG23AM221 | EfficientNet classifier training and evaluation tools |
+| PES1UG23AM237 | Full pipeline integration (**YOLO + Classifier + OCR + Billing**) |
+| PES1UG23AM134 | Documentation & Testing |
 
 ---
 
