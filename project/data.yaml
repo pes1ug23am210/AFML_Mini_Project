@@ -1,0 +1,28 @@
+names:
+  0: Ariel
+  1: axe perfume
+  2: cinthol-soap
+  3: comfort
+  4: dettol
+  5: garnier-face-cream
+  6: head-and-shoulder
+  7: himalya-face-wash
+  8: loreal
+  9: maggie
+  10: nivea-body-lotion
+  11: ponds-cream
+  12: savlon-handwash
+  13: sprite
+  14: wild-stone-powder
+  15: wild-stone-soap
+nc: 16
+path: D:\mod
+roboflow:
+  license: CC BY 4.0
+  project: dataset-qwvlr-2im6q
+  url: https://universe.roboflow.com/df-m9ost/dataset-qwvlr-2im6q/dataset/1
+  version: 1
+  workspace: df-m9ost
+test: ../test/images
+train: ../train/images
+val: ../valid/images
