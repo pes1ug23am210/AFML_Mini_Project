@@ -54,7 +54,7 @@ pip install -r requirements.txt
 │   │   ├── test_image.py     # Evaluation script
 │   │   ├── counter.py        # Item counting module
 │   │   └── cr.py             # Classification utilities
-│   ├── final1.py             # Main script for the full billing pipeline
+│   ├── bill.py             # Main script for the full billing pipeline
 │   └── best.pt               # Trained YOLOv8 weights
 │
 ├── occ/
