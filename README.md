@@ -31,8 +31,8 @@ The system integrates state-of-the-art models for high accuracy and reliability:
 
 ## 🧑‍💻 Development Team
 
-| **Student** | **Role** |
-| :--- | :--- |
+| **Student** | 
+| :--- | 
 | PES1UG23AM210 | 
 | PES1UG23AM221 |
 | PES1UG23AM237 | 
