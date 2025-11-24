@@ -47,27 +47,53 @@ The system integrates state-of-the-art models for high accuracy and reliability:
 Install all required Python libraries using the provided file:
 
 ```bash
-pip install -r requirements.txt
-2. Training ModelsTrain the two primary models required for the pipeline:ModelGoalCommandYOLOv8 Object DetectorDetect and locate items.python train_yolo.pyEfficientNet-B0 ClassifierClassify specific item types.python train_classifier.py3. Running the SystemTaskPurposeCommandYOLO vs Classifier EvaluationTest detection and initial classification stages.python project/utils/test_image.pyRun Full Billing PipelineExecute the full pipeline (Detection, Classification, OCR, Billing).cd project  python final1.pyRun One-Class Deep SVDDExecute the optional SKU verification module.cd occ  python occ.py📁 Project StructureGrocery_Billing_System/
+1)pip install -r requirements.txt
+2) extract the dataset zip into the model folder
+3)run train_classifier.py and train_yolo.py to train the classifier model and yolo model.
+4)train occ model according to your liking and paste it inside project/models
+5)this repo already has the trained models so just run bill.py for the outputs(input in the folder:bill_image).
+     
+├── model/
+│   ├── test/
+│   │   ├── images/
+│   │   └── labels/
+│   ├── train/
+│   │   ├── images/
+│   │   ├── labels/
+│   │   └── labels.cache
+│   ├── valid/
+│   │   ├── images/
+│   │   └── labels/
+│   │       └── labels.cache
+│   ├── best.pt
+│   ├── classifier_best.pth
+│   ├── data.yaml
+│   ├── test_image.py
+│   ├── train_classifier.py
+│   └── train_yolo.py
+├── one_class_classifier/
+│   ├── pics/
+│   ├── support_pics/
+│   ├── occ.py
+│   └── oneclass_model.pth
 ├── project/
-│   ├── utils/
-│   │   ├── test_image.py     # Evaluation script
-│   │   ├── counter.py        # Item counting module
-│   │   └── cr.py             # Classification utilities
-│   ├── bill.py             # Main script for the full billing pipeline
-│   └── best.pt               # Trained YOLOv8 weights
-│
-├── occ/
-│   ├── occ.py                # Deep SVDD training and execution script
-│   ├── support_pics/         # Images for one-class training
-│   └── pics/                 # Images for testing Deep SVDD
-│
-├── train_yolo.py             # Script for training YOLOv8
-├── train_classifier.py       # Script for training EfficientNet-B0
-├── classifier_best.pth       # Trained EfficientNet-B0 weights
-├── data.yaml                 # YOLO dataset configuration
-├── requirements.txt          # List of project dependencies
-└── README.md                 # This file
+│   ├── bill_image/
+│   ├── models/
+│   │   └── bingo.pth
+│   ├── best.pt
+│   ├── bill.py
+│   ├── classification.py
+│   ├── classifier_best.pth
+│   ├── config.py
+│   ├── data.yaml
+│   ├── detection.py
+│   ├── main.py
+│   ├── models.py
+│   ├── ocr.py
+│   ├── pipeline.py
+│   └── utils.py
+└── requirements.txt
+
 ```
 
 📜 License
